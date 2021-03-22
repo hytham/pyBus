@@ -1,16 +1,16 @@
-#Components
+# Components
 1.  Redis
 2.  Tensorflow
 3.  Numpy
 
 
-##Scripts
+## Scripts
 1. **npBusUtil:** this script will handle sending a numpy array and reading it from redis server
 2. **tfBusUtil:** this script will handle sending tensorflow object to redis
 3. **pdBusUtils:** this script will send pandas dataframe and reading from redis.
 4. **BusUtil:** this is the base class that all BusUtill will drive from
 
-##BusUtil
+## BusUtil
 This is the base class all bus utils will drive from. It contains
 
 - ***Properties***
@@ -32,4 +32,4 @@ This is the base class all bus utils will drive from. It contains
 -   ***Emitter***
 1.  ```NewMessageReceived(msg,timestamp)``` # will be triggered and handled by a custom method or a class when a message is found
 
-##The Run Cycle
+## The Run Cycle
